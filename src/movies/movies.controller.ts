@@ -24,5 +24,7 @@ export class MoviesController {
     }
 
     @Patch('/:id')
-    patch(@Param)
+    patch(@Param("id") movieId: string) {
+        return `this will delete a movie with the id: ${movieId}`
+    }
 }
